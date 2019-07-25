@@ -1,0 +1,16 @@
+.navbar-section{
+  background-color: grey;
+  width: 80%;
+  height: 50px;
+  float: right;
+}
+.sidebar-section{
+  background-color: yellow;
+  width: 20%;
+}
+.content-section{
+  background-color: red;
+  width: 80%;
+  height: 100vh;
+  float: right;
+}
