@@ -12,10 +12,6 @@
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
       <!-- Optional JavaScript -->
-      <!-- font google -->
-      <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
-      <!-- fontawasome -->
-      <script src="https://kit.fontawesome.com/336d05d417.js"></script>
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="js/jquery-3.3.1.slim.min.js"></script>
       <script src="js/popper.min.js"></script>
@@ -23,20 +19,208 @@
 
   </head>
   <body>
-    <!-- Bagian Navbar Start -->
-    <nav class="navbar-section">
-        <div class="container-fluid">
-            <i class="fas fa-search"></i>
-            <i class="fas fa-chart-bar"></i>
-            <i class="fas fa-users"></i>
+    <div class="d-flex" id="wrapper">
+    <!-- Bagian Sidebar  Start-->
+    <div class="bg-dark text-white border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading text-center">A Team </div>
+      <div class="list-group list-group-flush">
+        <div class="profile-admin">
+          <img src="image/profile.png" alt="">
+          <p class="text-dark">Admin</p>
         </div>
-    </nav>
-    <!-- Bagian navbar End -->
+        <a href="#" class="list-group-item list-group-item-action text-white bg-dark"><i class="fas fa-tachometer-alt"></i> &nbsp;&nbsp;&nbsp; Dashboard</a>
+        <a href="#" class="list-group-item list-group-item-action text-white bg-dark"><i class="fas fa-address-card"></i> &nbsp;&nbsp;&nbsp; Sidebar 1</a>
+        <a href="#" class="list-group-item list-group-item-action text-white bg-dark"><i class="fas fa-money-bill-wave"></i> &nbsp;&nbsp;&nbsp; Sidebar 2</a>
+        <a href="#" class="list-group-item list-group-item-action text-white bg-dark"><i class="fas fa-money-bill-wave"></i> &nbsp;&nbsp;&nbsp; Sidebar 3</a>
+        <a href="#" class="list-group-item list-group-item-action text-white bg-dark"><i class="fas fa-money-bill-wave"></i> &nbsp;&nbsp;&nbsp; Sidebar 4</a>
+        <a href="#" class="list-group-item list-group-item-action text-white bg-dark"><i class="fas fa-money-bill-wave"></i> &nbsp;&nbsp;&nbsp; Sidebar 5</a>
+      </div>
+    </div>
+    <!-- Bagian Sidebar End -->
 
 
+    <!-- Bagian Content dan Navbar Start -->
+    <div id="page-content-wrapper">
+      <!-- Bagian Navbar Start -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
+        <a href="#" id="menu-toggle"><i class="fas fa-bars text-white"></i></a>
 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Bagian Isi Body End -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-users"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Bagian Navbar End -->
+      <!-- Bagian Content Start -->
+      <div class="container-fluid">
+        <div class="data">
+    <div class="dasboard">
+        <div id="das-isi" class="row">
+            <div id="das-menu" class="col-md-12">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <h3>Dasboard</h3>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 offset-md-4">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-success">Account</button>
+                            <button type="button" class="btn btn-success">Purchases</button>
+                            <button type="button" class="btn btn-success">Sessions</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 my-2">
+                <div class="row">
+                    <div class="col-md-12">
+                    <div id="das-performance" class="card">
+                        <div class="card-title">
+                        Performance
+                        </div>
+                        <div class="card-body">
+                        <ul>
+                        <small>
+                            <li>jan</li>
+                            <li>feb</li>
+                            <li>mar</li>
+                            <li>apr</li>
+                            <li>mei</li>
+                        </small>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+            <div id="das-report" class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-title">
+                        Total Shipments
+                        </div>
+                        <div class="card-body">
+                        763,215
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-title">
+                        Daily Sale
+                        </div>
+                        <div class="card-body">
+                        3,500€
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-title">
+                        Completed Tasks
+                        </div>
+                        <div class="card-body">
+                        12,100K
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="dasboard-konten">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center border">
+                    User (active)
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                            </tbody>
+                        </table>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div  class="card">
+                        <div class="card-title">
+                            schedule
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <ul id="schedule">
+                                <li>eat</li>
+                                <li>sleep</li>
+                                <li>repeat</li>
+                                <li>eat</li>
+                                <li>sleep</li>
+                                <li>repeat</li>
+                                <li>eat</li>
+                                <li>sleep</li>
+                                <li>repeat</li>
+                                <li>eat</li>
+                                <li>sleep</li>
+                                <li>repeat</li>
+                                <li>eat</li>
+                                <li>sleep</li>
+                                <li>repeat</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+      </div>
+      <!-- Bagian Content End -->
+    </div>
+    <!-- Bagian Content dan Navbar End -->
+  </div>
 
 
     <!-- Bagian Footer Start -->
@@ -44,5 +228,10 @@
 
 
     <!-- Bagian Footer end -->
+    <script>
+      $("#menu-toggle").click(function() {
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
   </body>
 </html>

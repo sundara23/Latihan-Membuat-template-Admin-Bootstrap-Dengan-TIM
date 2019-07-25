@@ -1,16 +1,82 @@
-.navbar-section{
-  background-color: grey;
-  width: 80%;
-  height: 50px;
-  float: right;
+
+body {
+  overflow-x: hidden;
 }
-.sidebar-section{
-  background-color: yellow;
-  width: 20%;
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
 }
-.content-section{
-  background-color: red;
-  width: 80%;
-  height: 100vh;
-  float: right;
+#sidebar-wrapper .profile-admin{
+  text-align: center;
+  background-color: white;
+  padding-top: 10px;
+}
+#sidebar-wrapper .profile-admin img{
+  width: 100px;
+  text-align: center;
+  border-radius: 100%;
+  padding: 10px;
+  border: 2px solid grey;
+}
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+/* data */
+#das-menu{
+  background-color:rgba(255, 160, 122, 0.363);
+  padding: 20 0 20 30px;
+}
+/*  */
+/* report */
+#das-report{
+  text-align: center;
+}
+#das-report .card{
+  background-color: rgba(0, 255, 255, 0.288);
+}
+#das-performance{
+  background-color: rgba(128, 255, 0, 0.363);
+}
+/*  */
+/* das konten */
+#schedule{
+  height: 100px;
+  width: 100%;
+  overflow: scroll;
+}
+#schedule-card{
+  background-color: rgba(50, 205, 50, 0.281)
 }
