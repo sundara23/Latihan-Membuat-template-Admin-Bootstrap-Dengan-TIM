@@ -4,70 +4,10 @@
   height: 50px;
   float: right;
 }
-/* Sidebar section */
 .sidebar-section{
-  background-color: grey;
-  width: 20%;
-  height: 100vh;
-  font-family: 'Libre Baskerville', serif;
-  float: left;
-}
-.sidebar-section .profile{
-  text-align: center;
-  color: white;
-}
-.sidebar-section .profile img{
-  width: 150px;
   background-color: yellow;
-  padding-top: 10px;
-  border: 5px solid white;
-  padding: 10px;
-  border-radius: 100%;
+  width: 20%;
 }
-.sidebar-section .title{
-  text-align: center;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: bold;
-  padding-top: 5px;
-}
-.sidebar-section .title a{
-  text-decoration: none;
-  color: white;
-}
-.sidebar-list{
-  padding: 10px 5px 10px 5px;
-}
-.sidebar-list .list-item {
-  list-style-type: none;
-  padding: 5px 0 5px 30px;
-  margin: 5px 0 15px 0;
-}
-.sidebar-list .list-item a {
-  text-decoration: none;
-  color: white;
-}
-.list-item:hover{
-  font-weight: bold;
-  background-color: #f7be16;
-  border-radius: 5px;
-  color: grey;
-}
-
-
-@media (max-width: 576px) {
-  .sidebar-section .profile img{
-    width: 20px;
-    background-color: yellow;
-    padding-top: 10px;
-    border: 5px solid white;
-    padding: 10px;
-    border-radius: 100%;
-    
-  }
-
- }
-/* Sidebar section end */
-
 .content-section{
   background-color: red;
   width: 80%;
